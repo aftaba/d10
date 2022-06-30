@@ -1,0 +1,5 @@
+name: Role Based Expose Filter
+type: module
+description: 'Provides Role Based Expose Filter'
+package: custom
+core_version_requirement: ^8.8 || ^9

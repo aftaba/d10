@@ -1,0 +1,19 @@
+uuid: 54dbd970-ce32-4d84-9ce6-fbd23ca2a769
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product_id
+    - paragraphs.paragraphs_type.tipser_shop
+id: paragraph.tipser_shop.field_product_id
+field_name: field_product_id
+entity_type: paragraph
+bundle: tipser_shop
+label: 'Produkt Id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

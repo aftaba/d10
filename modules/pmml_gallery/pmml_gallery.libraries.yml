@@ -1,0 +1,10 @@
+pmml_gallery:
+  version: 1.x
+  css:
+    theme:
+      assets/pmml_gallery.css: {}   
+  js:
+    assets/pmml_gallery.js: {}   
+  dependencies:
+    - core/jquery
+

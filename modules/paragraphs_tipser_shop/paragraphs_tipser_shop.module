@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains paragraphs_tipser_shop.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function paragraphs_tipser_shop_theme($existing, $type, $theme, $path) {
+  return [
+    'embedded_tipser_shop' => [
+      'variables' => [
+          'bildsize' => '',
+          'product_id' => '',
+          'tipserCarousel' => '',
+          'tipserCollection' => '',
+          'collection_id' => '',
+          'height' => '',
+          'width' => '',
+      ],
+    ],
+  ];
+}

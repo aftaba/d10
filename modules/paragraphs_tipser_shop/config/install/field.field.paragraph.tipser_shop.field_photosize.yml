@@ -1,0 +1,19 @@
+uuid: b45b07dc-5e22-4ff8-a5aa-3b68865ae468
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_photosize
+    - paragraphs.paragraphs_type.tipser_shop
+id: paragraph.tipser_shop.field_photosize
+field_name: field_photosize
+entity_type: paragraph
+bundle: tipser_shop
+label: Bildgröße
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

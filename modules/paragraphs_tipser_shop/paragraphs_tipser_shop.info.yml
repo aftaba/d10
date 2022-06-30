@@ -1,0 +1,8 @@
+name: Paragraphs tipser Shop
+type: module
+description: 'Provides Paragraph tipser'
+package: klambt
+dependencies:
+  - drupal:field
+  - drupal:paragraphs
+core_version_requirement: ^8.8 || ^9

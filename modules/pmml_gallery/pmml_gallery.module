@@ -1,0 +1,7 @@
+<?php
+
+
+function pmml_gallery_page_attachments( &$attachments) {
+    
+    $attachments['#attached']['library'][] = 'pmml_gallery/pmml_gallery';
+}

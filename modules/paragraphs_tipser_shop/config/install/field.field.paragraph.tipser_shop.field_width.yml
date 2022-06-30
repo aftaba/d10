@@ -1,0 +1,19 @@
+uuid: f18ebb8b-3996-44ed-a820-c4cf957858aa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_width
+    - paragraphs.paragraphs_type.tipser_shop
+id: paragraph.tipser_shop.field_width
+field_name: field_width
+entity_type: paragraph
+bundle: tipser_shop
+label: Breite
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

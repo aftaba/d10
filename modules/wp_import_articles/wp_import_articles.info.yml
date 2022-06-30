@@ -1,0 +1,6 @@
+name: WP IMPORT Articles
+description: 'Import Post to Articles and fields in Drupal'
+core_version_requirement: ^8 || ^9
+package: Custom
+type: module
+

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * The Faker module file.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\faker\FakerHelper;
+use Drupal\faker\Plugin\DevelGenerate\FakerContentDevelGenerate;
+use Drupal\faker\Plugin\DevelGenerate\FakerUserDevelGenerate;
+
+/**
+ * Implements hook_devel_generate_info_alter().
+ *
+ * Alter existing plugins from devel_generate.
+ */
+function faker_devel_generate_info_alter(array &$definitions) {
+  $definitions['content']['class'] = FakerContentDevelGenerate::class;
+  $definitions['user']['class'] = FakerUserDevelGenerate::class;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Target nodes that have been saved through devel_generate.
+ */
+function faker_node_presave(EntityInterface $node) {
+  FakerHelper::entityPreSave($node);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Target user that have been saved through devel_generate.
+ */
+function faker_user_presave(EntityInterface $user) {
+  FakerHelper::entityPreSave($user);
+}

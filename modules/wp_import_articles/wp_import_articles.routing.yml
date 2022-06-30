@@ -1,0 +1,9 @@
+wp_import_articles.ringlist:
+  path: '/admin/xml-import-articles'
+  defaults:
+    _form: '\Drupal\wp_import_articles\Form\CSVImportForm'
+    _title: 'Import XML File to Article'
+  requirements:
+    _permission: 'access content'
+
+    

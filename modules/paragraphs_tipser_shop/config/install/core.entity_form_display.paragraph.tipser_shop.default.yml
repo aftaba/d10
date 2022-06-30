@@ -1,0 +1,102 @@
+uuid: 3d453a51-1be9-4564-a11a-0143cdeb1c4d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tipser_shop.field_collection_id
+    - field.field.paragraph.tipser_shop.field_height
+    - field.field.paragraph.tipser_shop.field_photosize
+    - field.field.paragraph.tipser_shop.field_product_id
+    - field.field.paragraph.tipser_shop.field_tipser_carousel
+    - field.field.paragraph.tipser_shop.field_tipser_collection
+    - field.field.paragraph.tipser_shop.field_width
+    - paragraphs.paragraphs_type.tipser_shop
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_optional:
+      children:
+        - field_tipser_carousel
+        - field_tipser_collection
+        - field_collection_id
+        - field_height
+        - field_width
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: true
+        id: ''
+        classes: ''
+        description: ''
+        open: true
+        required_fields: true
+      label: Optional
+_core:
+  default_config_hash: J0zXsBFQSVM-whx8dvTcWE9h36xhnZ2S-i6VgjUW3nI
+id: paragraph.tipser_shop.default
+targetEntityType: paragraph
+bundle: tipser_shop
+mode: default
+content:
+  field_collection_id:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_height:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photosize:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_product_id:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tipser_carousel:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tipser_collection:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_width:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

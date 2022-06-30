@@ -1,0 +1,19 @@
+uuid: 45933987-0dc9-43ea-bd98-19eef8f305a8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_height
+    - paragraphs.paragraphs_type.tipser_shop
+id: paragraph.tipser_shop.field_height
+field_name: field_height
+entity_type: paragraph
+bundle: tipser_shop
+label: Höhe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

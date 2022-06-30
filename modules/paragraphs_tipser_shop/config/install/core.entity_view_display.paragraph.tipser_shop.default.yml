@@ -1,0 +1,37 @@
+uuid: 22d746d4-77d0-4146-81b9-690f4f2f5dae
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tipser_shop.field_collection_id
+    - field.field.paragraph.tipser_shop.field_height
+    - field.field.paragraph.tipser_shop.field_photosize
+    - field.field.paragraph.tipser_shop.field_product_id
+    - field.field.paragraph.tipser_shop.field_tipser_carousel
+    - field.field.paragraph.tipser_shop.field_tipser_collection
+    - field.field.paragraph.tipser_shop.field_width
+    - paragraphs.paragraphs_type.tipser_shop
+  module:
+    - paragraphs_tipser_shop
+_core:
+  default_config_hash: iqdM4lfn7SbKAJ3B1-kNdlyEsO7babCxucrwJUunch4
+id: paragraph.tipser_shop.default
+targetEntityType: paragraph
+bundle: tipser_shop
+mode: default
+content:
+  field_height:
+    type: embedded_tipser_shop
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_collection_id: true
+  field_photosize: true
+  field_product_id: true
+  field_tipser_carousel: true
+  field_tipser_collection: true
+  field_width: true
+  search_api_excerpt: true

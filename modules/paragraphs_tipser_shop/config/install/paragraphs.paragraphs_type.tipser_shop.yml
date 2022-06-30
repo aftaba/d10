@@ -1,0 +1,12 @@
+uuid: ff1a0073-55b2-46eb-a188-7abe52ea7aca
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hvwO69WSP-7SAjRfwLG1YSIEfsk0KQw0cB5tUyMN0T4
+id: tipser_shop
+label: 'Tipser Shop'
+icon_uuid: null
+icon_default: null
+description: 'Integration of the Tipser Shop'
+behavior_plugins: {  }

@@ -1,0 +1,22 @@
+<?php
+
+function role_based_expose_filter_form_views_exposed_form_alter(&$form, &$form_state){
+
+	if($form['#theme'][0] == 'views_exposed_form__list_post__page_1'){
+		$types = \Drupal::entityTypeManager()->getStorage('node_type')->loadMultiple();
+		$content_types = array_keys( $types );
+		$access_data["All"] = t("- Any -");
+		foreach( $content_types as $type ) {
+			$has_permission = \Drupal::currentUser()->hasPermission('create '.$type.' content'); 
+			if( $has_permission ) {
+				$access_data[$type] = ucfirst($type);
+			}
+		}
+		
+		$form['type'] = array(
+            '#type' => 'select',
+            '#default_value' => 'All',
+            '#options' => $access_data,
+        );
+	}
+}

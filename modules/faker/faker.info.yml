@@ -1,0 +1,11 @@
+name: Faker
+type: module
+description: Use the PHP Faker library to generate more meaningful sample content.
+package: Development
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-04-10
+version: '8.x-2.0-alpha2'
+project: 'faker'
+datestamp: 1586516321

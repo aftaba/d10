@@ -1,0 +1,21 @@
+uuid: 9bb9bb4c-0d3c-46d4-a9e1-b5a066d0fae7
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_tipser_collection
+field_name: field_tipser_collection
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
